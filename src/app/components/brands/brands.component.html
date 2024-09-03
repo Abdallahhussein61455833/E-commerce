@@ -1,0 +1,19 @@
+<section class="container">
+    <h2 class="text-main fw-bold text-center my-4">All Brands
+    </h2>
+    <div class="row g-3">
+        @for (brand of brandsList; track brand._id)
+         {
+            <div class="col-md-3">
+                <div class="product">
+                    <img [src]="brand.image" height="300px" class="w-100" [alt]="brand.name">
+                    <h3 class="fw-bold text-main text-center my-3">{{brand.name}}</h3>
+                </div>
+
+            </div>
+        }
+    </div>
+
+
+
+</section>
